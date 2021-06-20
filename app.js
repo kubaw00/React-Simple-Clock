@@ -10,8 +10,6 @@ class App extends React.Component {
         })
     }
     
-    
-    
     render(){
         return(
             <div>
@@ -30,8 +28,6 @@ const Button = (props) => (
 
 class Clock extends React.Component {
    
-   
-   
     state = {
     time: this.getTime()
    }
@@ -47,8 +43,9 @@ class Clock extends React.Component {
    }
 
    updateTime = () => {
-       this.setState({
-           time: this.getTime()
+       const time = this.getTime()
+    this.setState({
+           time
        })
    }
   
